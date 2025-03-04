@@ -1,0 +1,119 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #4CAF50, #2E7D32);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #2E7D32;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Button Styling */
+.button-animate {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button-animate:hover {
+    background-color: #1B5E20;
+    transform: scale(1.05);
+}
+
+.button-animate:active {
+    transform: scale(0.95);
+}
+
+/* Glowing Button */
+.glow-button {
+    box-shadow: 0 0 10px #4CAF50;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 20px #1B5E20;
+}
+
+/* Form Styling */
+.form-container {
+    background: white;
+    color: black;
+    margin: 30px auto;
+    padding: 25px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Input & Textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #2E7D32;
+    box-shadow: 0px 0px 8px rgba(46, 125, 50, 0.5);
+}
+
+/* Resume Output */
+.resume-output {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Team Section */
+.team-container {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in { animation: fadeIn 1.5s ease-in-out; }
+.slide-up { animation: slideUp 1s ease-in-out; }
